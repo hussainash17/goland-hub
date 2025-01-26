@@ -11,7 +11,7 @@ import (
 
 func NewsConsumer() {
 	c, err := kafka.NewConsumer(&kafka.ConfigMap{
-		"bootstrap.servers": "192.168.3.38:9092",
+		"bootstrap.servers": "****:9092",
 		"group.id":          "myGroup",
 		"auto.offset.reset": "earliest",
 	})

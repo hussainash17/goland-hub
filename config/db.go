@@ -22,7 +22,7 @@ func InitDB() {
 		},
 	)
 
-	dsn := "host=192.168.3.37 user=sa password=egp12345! dbname=oms-market-data port=5432 sslmode=disable"
+	dsn := "host=**** user=* password=**** dbname=******* port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{
 		Logger: newLogger, // Use the custom logger
 	})
